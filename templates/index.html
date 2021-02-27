@@ -1,0 +1,36 @@
+{% extends "import.html" %}
+{% block content %}
+
+<center>
+<h2>PicTalk</h2><br>
+
+<div>
+
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        <label for="imageUpload" class="btn btn-primary">
+            Upload Image
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg, .jfif">
+    </form>
+
+    <div class="image-section" style="display:none;">
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-info btn-lg " id="btn-text" command = "read_text">Generate Text file</button>
+            <button type="button" class="btn btn-info btn-lg " id="btn-audio" command = "read_audio" name="test_temp">Generate Audio</button>
+
+        </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+
+    <h3 id="result">
+        <span> </span>
+    </h3>
+
+</div>
+</center><br><br>
+{% endblock %}
