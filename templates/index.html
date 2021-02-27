@@ -1,6 +1,5 @@
 {% extends "import.html" %}
 {% block content %}
-
 <center>
 <h2>PicTalk</h2><br>
 
@@ -18,16 +17,20 @@
             <div id="imagePreview">
             </div>
         </div>
-        <div>
-            <button type="button" class="btn btn-info btn-lg " id="btn-text" command = "read_text">Generate Text file</button>
-            <button type="button" class="btn btn-info btn-lg " id="btn-audio" command = "read_audio" name="test_temp">Generate Audio</button>
 
+        <div>
+             <button type="button" class="btn btn-info btn-lg " id="btn-predict2">Generate Text</button>
+             <button type="button" class="btn btn-info btn-lg " id="btn-predict">Generate Audio</button>
         </div>
     </div>
 
     <div class="loader" style="display:none;"></div>
 
     <h3 id="result">
+        <span> </span>
+    </h3>
+
+    <h3 id="audioresult">
         <span> </span>
     </h3>
 
