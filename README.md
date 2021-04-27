@@ -1,3 +1,4 @@
+Entry for SpaceJam 2021 (Team Coderly Rock)
 Our project is an image recoginition system, which extracts text from images and converts them into audio files and editable text.
 The audio files help the blind and illiterate understand the text given in the images
 We have used: pyTesseract.
